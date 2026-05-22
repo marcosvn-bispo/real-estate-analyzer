@@ -53,7 +53,3 @@ npm install
 npm run dev
 ```
 A aplicação web estará acessível em `http://localhost:3000`.
-
-## 🎨 Design
-
-O dashboard utiliza a paleta corporativa "Slate & Blue", com gráficos de alto contraste, painéis (cards) brancos com sombreamento suave e leitura fluida de dados.

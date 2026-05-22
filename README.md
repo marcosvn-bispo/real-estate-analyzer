@@ -1,59 +1,59 @@
 # Real Estate Analytics
 
-A modern, full-stack real estate analytics dashboard with ML-powered price predictions.
+Um dashboard moderno e full-stack de análise imobiliária com previsões de preço baseadas em Machine Learning.
 
-## 🚀 Overview
+## 🚀 Visão Geral
 
-This project provides an advanced dashboard for analyzing the Seattle housing market. It features a modern, clean UI built with Next.js and a powerful backend built with Python & FastAPI. It utilizes Machine Learning to predict property prices based on various features like square footage, number of bedrooms/bathrooms, and location.
+Este projeto oferece um painel avançado para a análise do mercado imobiliário de Seattle. Ele possui uma interface limpa e moderna construída com Next.js e um backend poderoso construído com Python e FastAPI. O projeto utiliza Machine Learning para prever o valor dos imóveis com base em diversas características, como metragem quadrada, número de quartos/banheiros e localização.
 
-## 🛠️ Tech Stack
+## 🛠️ Tecnologias Utilizadas
 
-- **Frontend:** Next.js, React, Recharts, CSS (Modern Flat UI - Slate & Blue)
+- **Frontend:** Next.js, React, Recharts, CSS (Modern Flat UI - Tema Slate & Blue)
 - **Backend:** FastAPI, Python, SQLite, Pandas
 - **Machine Learning:** Scikit-Learn (Joblib)
 
-## 📦 Project Structure
+## 📦 Estrutura do Projeto
 
 ```text
 real-estate-analyzer/
-├── backend/          # FastAPI server, ML model, data ingestion
-└── frontend/         # Next.js web application
+├── backend/          # Servidor FastAPI, Modelo de ML, Geração de dados
+└── frontend/         # Aplicação Web em Next.js
 ```
 
-## ⚙️ How to Run Locally
+## ⚙️ Como Rodar Localmente
 
-### 1. Backend Setup
+### 1. Configuração do Backend
 
-Open a terminal and set up the Python API:
+Abra um terminal e configure a API em Python:
 
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate  # Or `source venv/bin/activate` on Mac/Linux
+venv\Scripts\activate  # Ou `source venv/bin/activate` no Mac/Linux
 pip install fastapi uvicorn pandas scikit-learn joblib
 
-# Generate the synthetic database
+# Gere o banco de dados sintético
 python ingest_data.py  
 
-# Train the ML model
+# Treine o modelo de Machine Learning
 python train_model.py  
 
-# Run the API server
+# Inicie o servidor da API
 uvicorn main:app --reload
 ```
-The API will be running at `http://localhost:8000`.
+A API estará rodando em `http://localhost:8000`.
 
-### 2. Frontend Setup
+### 2. Configuração do Frontend
 
-In a separate terminal, install the dependencies and run the Next.js app:
+Em um terminal separado, instale as dependências e rode a aplicação Next.js:
 
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-The web application will be accessible at `http://localhost:3000`.
+A aplicação web estará acessível em `http://localhost:3000`.
 
 ## 🎨 Design
 
-The dashboard utilizes a clean "Slate & Blue" professional color palette with high-contrast, easy-to-read charts, solid white KPI cards, and custom CSS variables for easy theming.
+O dashboard utiliza a paleta corporativa "Slate & Blue", com gráficos de alto contraste, painéis (cards) brancos com sombreamento suave e leitura fluida de dados.
